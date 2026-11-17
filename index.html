@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СтройТрекер — управление проектами</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">▥</div>
+        <div class="brand-text"><strong>СТРОЙ<span>ТРЕКЕР</span></strong><small>управление проектами</small></div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-hint">MVP v1.0 · Данные хранятся локально</div>
+      </div>
+    </aside>
+
+    <div class="main-wrap">
+      <header class="topbar">
+        <button class="mobile-menu icon-btn" id="mobile-menu">☰</button>
+        <div class="page-heading"><h1 id="page-title">Дашборд</h1><p id="page-subtitle"></p></div>
+        <div class="topbar-right">
+          <button class="icon-btn notif-btn" id="notif-btn" title="Уведомления">♢<span id="notif-count" class="notif-count"></span></button>
+          <span id="user-avatar"></span>
+        </div>
+        <div class="notif-panel" id="notif-panel"></div>
+      </header>
+      <main class="content" id="content"></main>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/gantt.js"></script>
+  <script src="js/app.js"></script>
+  <script>window.TrackerApp.init();</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Служебные материалы, не относящиеся к приложению
+INFO/
+
+# ОС и редакторы
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
